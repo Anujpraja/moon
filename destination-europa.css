@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.destination {
+    background-image: url("Image/background-destination-desktop.jpg");
+}
+
+section {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav {
+    width: 700px;
+    height: 83px;
+    border-radius: 0.5px;
+    margin-top: 15px;
+    margin-left: 565px;
+    position: absolute;
+    backdrop-filter: blur;
+    border: 0px solid #0B0D17;
+    backdrop-filter: blur(8px);
+}
+
+header img {
+    position: relative;
+    margin-top: 30px;
+    margin-left: 5px;
+}
+
+header ul {
+    position: absolute;
+    display: flex;
+    gap: 2px;
+    columns: 2px;
+    margin-top: 22px;
+}
+
+header ul li {
+    list-style: none;
+    padding: 10px;
+    text-align: center;
+}
+
+header ul li a {
+    display: inline-block;
+    color: #FFFFFF;
+    font-weight: 400;
+    margin-left: 20px;
+    text-decoration: none;
+    font-family: 'Barlow', sans-serif;
+    justify-content: space-between;
+    right: -20px;
+}
+
+.new-hr {
+    margin-top: 55px;
+    width: 480px;
+    z-index: 1;
+    height: 0px;
+    margin-right: 590px;
+}
+
+img {
+    margin-top: 100px;
+    margin-left: 70px;
+    position: absolute;
+}
+
+.images {
+    width: 350px;
+    height: 350px;
+    margin-top: 100px;
+    position: absolute;
+}
+
+.images img {
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.container {
+    width: 445px;
+    height: 400px;
+    margin-left: 600px;
+    margin-top: 70px;
+    position: absolute;
+}
+
+.container ul {
+    width: 300px;
+    height: 19px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.container ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #FFFFFF;
+    display: inline-block;
+    font-family: 'Barlow', sans-serif;
+}
+
+.heading {
+    width: 365px;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.heading h1 {
+    font-size: 86px;
+    color: #FFFFFF;
+    font-family: 'Barlow', ;
+}
+
+.paragraph {
+    width: 400px;
+    height: 100px;
+}
+
+.paragarph p {
+    font-size: 16px;
+    color: #FFFFFF;
+    text-indent: 1px;
+    line-height: 2;
+    margin-top: 25px;
+}
+
+hr {
+    margin-top: 25px;
+}
+
+.bottomtext {
+    width: 150px;
+    height: 75px;
+    margin-top: 10px;
+}
+
+.bottomtext h6 {
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+.bottomtext p {
+    margin-top: 2px;
+}
+
+.container-bottom {
+    width: 150px;
+    height: 70px;
+    margin-top: 10px;
+}
+
+.container-bottom h6 {
+    font-size: 14px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.container-bottom p {
+    font-size: 14px;
+    color: #FFFFFF;
+    margin-top: 15px;
+}
+
+.container-bottomtext {
+    display: flex;
+}
+
+.textbox {
+    display: flex;
+    width: 100%;
+    line-height: 2;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.textbox h6 {
+    font-size: 14px;
+    color: #D0D6F9;
+    text-transform: uppercase;
+    font-family: 'Barlow', sans-serif;
+}
+
+.textbox p {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: 'Barlow', sans-serif;
+    color: #FFFFFF;
+}
+
+@media only screen and (max-width: 768px) {
+    .destination {
+        background-image: url("Image/background-destination-tablet.jpg");
+    }
+    section {
+        width: 768px;
+        top: 0px;
+        right: 0px
+    }
+    .logo {
+        width: 48px;
+        height: 48px;
+        margin-left: -40px;
+        margin-top: -6px;
+    }
+    header nav {
+        margin-left: 216px;
+        margin-top: -25px;
+        width: 450px;
+        height: 82px;
+    }
+    header nav ul li a span {
+        display: none;
+    }
+    .images {
+        width: 280px;
+        height: 280px;
+        margin-left: 140px;
+    }
+    .images img {
+        width: 280px;
+        height: 280px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    .container {
+        width: 600px;
+        margin-left: -20px;
+        margin-top: 450px;
+    }
+    .container ul {
+        margin-left: 150px;
+    }
+    .container .heading {
+        margin-left: 110px;
+        width: 370px;
+    }
+    .container h1 {
+        margin-left: 15px;
+    }
+    .paragarph p {
+        text-align: center;
+    }
+    .textbox {
+        margin-top: 25px;
+        width: 400px;
+        margin-left: 100px;
+    }
+    .textbox .text h6 {
+        text-align: center;
+    }
+    .textbox .text p {
+        text-align: center;
+    }
+    .textbox .textsecond h6 {
+        text-align: center;
+    }
+    .textbox .textsecond p {
+        text-align: center;
+    }
+}

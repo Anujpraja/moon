@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.destination {
+    background-image: url("Image/background-technology-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: 1366px 768px;
+}
+
+section {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav {
+    width: 700px;
+    height: 83px;
+    border-radius: 0.5px;
+    margin-top: 15px;
+    margin-left: 565px;
+    position: absolute;
+    backdrop-filter: blur;
+    border: 0px solid #0B0D17;
+    backdrop-filter: blur(8px);
+}
+
+header img {
+    position: relative;
+    margin-top: 30px;
+}
+
+.underlinetop {
+    margin-left: -510px;
+    width: 515px;
+    margin-top: 38px;
+}
+
+nav hr {
+    margin-right: 100px;
+    align-items: center;
+}
+
+header ul {
+    position: absolute;
+    display: flex;
+    gap: 2px;
+    columns: 2px;
+    margin-top: 22px;
+}
+
+header ul li {
+    list-style: none;
+    padding: 10px;
+    text-align: center;
+}
+
+header ul li a {
+    display: inline-block;
+    color: #FFFFFF;
+    font-weight: 400;
+    margin-left: 20px;
+    text-decoration: none;
+    font-family: 'Barlow', sans-serif;
+    justify-content: space-between;
+    right: -20px;
+}
+
+hr {
+    width: 500px;
+    height: 0px;
+    margin-top: 55px;
+    margin-right: 590px;
+    z-index: 1;
+}
+
+.content {
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-left: 90px;
+    position: absolute;
+}
+
+.circlelink {
+    margin-top: 80px;
+    justify-content: space-between;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    padding: 10px;
+    background: #fff;
+    margin-top: 20px;
+}
+
+.circle1 {
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    padding: 10px;
+    background: #fff;
+    margin-top: 20px;
+}
+
+.circle2 {
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    padding: 10px;
+    background: #fff;
+    margin-top: 20px;
+}
+
+.content .textbox {
+    position: relative;
+    height: 40;
+}
+
+.content .textbox h1 {
+    color: #D0D6F9;
+    font-size: 22px;
+    line-height: 1.4em;
+    font-weight: 500;
+    font-family: 'Barlow', sans-serif;
+}
+
+.content .textbox span {
+    font-size: 50px;
+    color: #FFFFFF;
+    font-family: 'Barlow', sans-serif;
+}
+
+.content .textbox p {
+    line-height: 2;
+    color: #D0D6F9;
+    font-size: 18px;
+    font-family: 'Barlow', sans-serif;
+    margin-top: 30px;
+}
+
+.photo {
+    margin-top: 10%;
+    margin-right: 22%;
+    position: relative;
+}
+
+.photo img {
+    width: 352px;
+    height: 350px;
+    position: absolute;
+}
+
+@media only screen and (max-width: 768px) {
+    .destination {
+        background-image: url("Image/background-technology-tablet.jpg");
+    }
+    section {
+        width: 768px;
+        top: 0px;
+        right: 0px
+    }
+    header img {
+        margin-top: 5px;
+    }
+    header nav {
+        margin-left: 210px;
+        margin-top: -25px;
+        width: 450px;
+        height: 96px;
+    }
+    header nav ul span {
+        display: none;
+    }
+    hr {
+        display: none;
+    }
+    .photo img {
+        margin-top: 0px;
+        width: 768px;
+        height: 300px;
+        margin-left: -545px;
+    }
+    .circlelink {
+        margin-top: 450px;
+        display: flex;
+        margin-top: 370px;
+        height: 100px;
+        width: 220px;
+        margin-left: 200px;
+    }
+    .content {
+        margin-top: 480px;
+        text-align: center;
+    }
+}

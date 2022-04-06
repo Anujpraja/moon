@@ -1,0 +1,273 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    @import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+    .background {
+        background-image: url("Image/background-home-desktop.jpg");
+        background-repeat: no-repeat;
+    }
+    
+    section {
+        position: absolute;
+        width: 100%;
+        min-height: 100%;
+        padding: 100px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px 100px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    header nav {
+        width: 700px;
+        height: 83px;
+        border-radius: 0.5px;
+        margin-top: 15px;
+        margin-left: 565px;
+        position: absolute;
+        backdrop-filter: blur;
+        border: 0px solid #0B0D17;
+        backdrop-filter: blur(8px);
+        overflow: hidden;
+    }
+    
+    hr {
+        width: 500px;
+        height: 0px;
+        margin-top: 55px;
+        margin-right: 590px;
+        z-index: 1;
+    }
+    
+    header img {
+        position: relative;
+        margin-top: 30px;
+    }
+    
+    header ul {
+        position: absolute;
+        display: flex;
+        gap: 2px;
+        columns: 2px;
+        margin-top: 22px;
+    }
+    
+    header ul li {
+        list-style: none;
+        padding: 10px;
+        text-align: center;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+    
+    header ul li a {
+        display: inline-block;
+        color: #FFFFFF;
+        font-weight: 400;
+        margin-left: 20px;
+        text-decoration: none;
+        font-family: 'Barlow', sans-serif;
+        justify-content: space-between;
+        right: -20px;
+        border-bottom: 3px solid transparent;
+    }
+    
+    .content {
+        top: 35%;
+        width: 450px;
+        justify-content: space-between;
+        position: absolute;
+    }
+    
+    .content span {
+        font-size: 150px;
+        color: #FFFFFF;
+        font-family: 'Barlow', sans-serif;
+    }
+    
+    .content h1 {
+        font-size: 28px;
+        color: #FFFFFF;
+        font-family: 'Bellefair', ;
+        position: relative;
+    }
+    
+    .content p {
+        line-height: 2;
+        color: #D0D6F9;
+        font-size: 18px;
+        font-family: 'Barlow', sans-serif;
+        margin-top: 30px;
+        margin-top: 10px;
+    }
+    
+    .large-button span {
+        font-size: 28px;
+    }
+    
+    .large-button {
+        display: grid;
+        place-items: center;
+        padding: 0 2em;
+        border-radius: 50%;
+        text-decoration: none;
+        width: 250px;
+        height: 250px;
+        z-index: 1;
+        margin-left: 790px;
+        margin-top: 180px;
+        background-color: hsl 231°, 77%, 90%;
+    }
+    
+    .large-button::after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        background-color: #FFFFFF;
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        transition: transform 500ms ease-in-out;
+    }
+    
+    .large-button:hover::after,
+    .large-button:focus::after {
+        transform: scale(1.5);
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .background {
+            background-image: url("Image/background-home-tablet.jpg");
+        }
+        section {
+            width: 768px;
+            top: 0px;
+            right: 0px
+        }
+        .logo {
+            width: 48px;
+            height: 48px;
+            margin-left: -40px;
+            margin-top: -6px;
+        }
+        header nav {
+            margin-left: 215px;
+            margin-top: -25px;
+            width: 450px;
+            height: 82px;
+        }
+        header nav ul span {
+            display: none;
+        }
+        hr {
+            display: none;
+        }
+        .content {
+            width: 450px;
+            top: 230px;
+            height: 334px;
+            left: 170px;
+        }
+        .content h1 {
+            text-align: center;
+        }
+        .content span {
+            text-align: center;
+        }
+        .content p {
+            text-align: center;
+        }
+        .large-button {
+            width: 242px;
+            height: 242px;
+            margin-left: 180px;
+            margin-top: 580px;
+            color: #FFFFFF;
+        }
+        .large-button::after {
+            width: 245px;
+            height: 245px;
+        }
+        .dot h1 {
+            margin-top: 100px;
+            text-align: center;
+            font-size: 32px;
+        }
+    }
+    
+    @media only screen and (max-width: 375px) {
+        .logo {
+            width: 48px;
+            height: 48px;
+            margin-left: -70px;
+            margin-top: -10px;
+        }
+        .background {
+            background-image: url("Image/background-home-tablet.jpg");
+        }
+        section {
+            width: 375px;
+            top: 0px;
+            right: 0px;
+        }
+        header nav ul li {
+            display: none;
+        }
+        header nav {
+            position: absolute;
+            background-color: #979797;
+            height: 677px;
+            width: 255px;
+            top: 0;
+            right: 0;
+            text-align: left;
+            z-index: 1;
+        }
+        .content {
+            width: 350px;
+            top: 160px;
+            height: 264px;
+            text-align: center;
+            margin-left: -155px;
+        }
+        .content h1 {
+            text-align: center;
+        }
+        .content span {
+            font-size: 80px;
+            text-align: center;
+            width: 327px;
+        }
+        .content p {
+            width: 327px;
+            text-align: center;
+            font-size: 12px;
+        }
+        .large-button {
+            width: 150px;
+            height: 150px;
+            margin-top: 380px;
+            color: #FFFFFF;
+            margin-left: 15px;
+        }
+        .dot h1 {
+            margin-top: 100px;
+            text-align: center;
+            font-size: 32px;
+        }
+        .large-button::after {
+            width: 180px;
+            height: 180px;
+        }
+    }
